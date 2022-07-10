@@ -1,0 +1,329 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Microsoft JhengHei;
+}
+
+h2 {
+  font-weight: bold;
+}
+.body {
+  background-color: #fafafa;
+}
+
+.wrapper {
+  width: 1025px;
+  margin: 0 auto;
+}
+
+.info {
+  background-image: url("assets/img-headerShape.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  padding-top: 125px;
+  padding-left: 135px;
+  padding-bottom: 20px;
+}
+
+.avatar {
+  margin-bottom: 11px;
+}
+
+h1 {
+  font-size: 42px;
+  margin-top: 11px;
+  margin-bottom: 9px;
+  text-align: center;
+}
+
+.info h2 {
+  font-size: 14px;
+  color: #4a4a4a;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.info h3 {
+  font-size: 14px;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+.info ul {
+  margin-left: 136px;
+  vertical-align: middle;
+}
+
+.info li {
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+.info li img {
+  margin-right: 12px;
+}
+
+.skills {
+  padding-top: 110px;
+}
+
+.skills h2 {
+  font-size: 24px;
+  color: #1736dc;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.skills .cards-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 69px 56px 69px;
+}
+
+.skills .card {
+  width: 284px;
+  height: 276px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 27px;
+  border-radius: 5px;
+}
+
+.skills .card img {
+  margin-bottom: 23px;
+}
+
+.skills .card h3 {
+  font-size: 18px;
+  color: #4a4a4a;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.skills .card ul {
+  font-size: 10px;
+  color: #4a4a4a;
+  text-align: left;
+  list-style-type: disc;
+}
+
+.skills .card:nth-child(1) {
+  border-bottom: 6px solid #f58d23;
+}
+.skills .card:nth-child(2) {
+  border-bottom: 6px solid #539e43;
+}
+.skills .card:nth-child(3) {
+  border-bottom: 6px solid #6762a6;
+}
+
+.exprience-container {
+  display: flex;
+  justify-content: center;
+}
+
+.experiences h2 {
+  font-size: 24px;
+  color: #1736dc;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bar {
+  width: 2px;
+  height: 48px;
+  background: #d8d8d8;
+}
+
+.long-bar {
+  height: 115px;
+}
+
+.longest-bar {
+  height: 152px;
+}
+
+.base-bar {
+  width: 46px;
+  height: 4px;
+}
+.experiences {
+  padding-bottom: 56px;
+}
+
+.experiences .card {
+  width: 260px;
+  height: 136px;
+  background: #ffffff;
+  border: 1px solid #fb56bf;
+  border-radius: 10px;
+  padding: 8px 12px;
+  margin-bottom: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-shadow: 0 2px 15px rgba(251, 86, 191, 0.3);
+}
+
+.experiences .card h3 {
+  font-size: 12px;
+  color: #4a4a4a;
+  letter-spacing: 0.53px;
+}
+
+.experiences .card h4 {
+  font-size: 12px;
+  color: #8a1737;
+  letter-spacing: 0.53px;
+}
+
+.experiences .card h5 {
+  font-size: 12px;
+  color: #4a4a4a;
+  letter-spacing: 0.53px;
+}
+
+.experiences .card p {
+  font-size: 10px;
+  color: #9b9b9b;
+  letter-spacing: 0.44px;
+  line-height: 18px;
+}
+
+.experiences .cards-container {
+  padding-top: 83px;
+}
+
+.cards-container.first-block .card:nth-child(odd) {
+  visibility: hidden;
+}
+
+.cards-container.second-block .card:nth-child(even) {
+  visibility: hidden;
+}
+
+.works {
+  padding-bottom: 98px;
+}
+
+.works h2 {
+  font-size: 24px;
+  color: #fb56bf;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.works .cards-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.works .card {
+  width: 284px;
+  height: 213px;
+  border-radius: 4px;
+}
+
+.works .card .title {
+  padding-top: 9px;
+  padding-left: 8px;
+}
+.works .card h3 {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.works .card p {
+  font-size: 14px;
+  color: #4a4a4a;
+}
+.works .card .img-container {
+  height: 150px;
+  display: flex;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.work1 .img-container {
+  justify-content: flex-end;
+  align-items: flex-end;
+  background-color: #fdb4e3;
+}
+
+.work2 .img-container,
+.work3 .img-container {
+  justify-content: center;
+  align-items: center;
+  background-color: #424242;
+}
+
+.work3 .img-container {
+  background-color: #8ad7fa;
+}
+
+.profile {
+  padding-bottom: 74px;
+}
+
+.profile h2 {
+  font-size: 24px;
+  color: #fb56bf;
+  text-align: center;
+  margin-bottom: 46px;
+}
+
+.profile .container {
+  display: flex;
+  justify-content: center;
+  width: 746px;
+  margin: 0 auto;
+}
+.profile img {
+  object-fit: contain;
+}
+
+.profile .text {
+  padding-left: 44px;
+  width: 442px;
+}
+
+.profile p {
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+footer {
+  height: 87px;
+  background-image: url("./assets/img-Looper-bg.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: #000000;
+}
+
+.card {
+  box-shadow: 0 2px 15px rgba(50, 50, 50, 0.3);
+}

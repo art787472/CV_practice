@@ -5,36 +5,194 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>履歷表</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
       <section class="info">
-        <img
-          src="https://hexschool.github.io/HTML_sketch_export/assets/img-headerShape.png"
-          alt=""
-        />
-        <div class="avatar">
+        <div class="avatar-container">
           <img
             src="https://hexschool.github.io/HTML_sketch_export/assets/img-c-portrait-1804963_1920.png"
             alt=""
+            class="avatar"
           />
           <h1>梅介其</h1>
           <h2>breanne.zulauf</h2>
           <h3>Web Developer</h3>
         </div>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>
+            <img src="./assets/Icon-location.png" alt="icon-location" /> Taipei
+            / San Francisco
+          </li>
+          <li>
+            <img
+              src="./assets/Icon-mail.png"
+              alt="icon-location"
+            />breanne.zulauf@gerson.tv
+          </li>
+          <li>
+            <img
+              src="./assets/icon-github.png"
+              alt="icon-location"
+            />breanne.zulauf
+          </li>
         </ul>
       </section>
-      <section></section>
-      <section></section>
-      <section></section>
-      <section></section>
+
+      <!-- skills -->
+      <section class="skills">
+        <h2>Modern Web Skills</h2>
+        <div class="cards-container">
+          <div class="card" data-aos="fade-up">
+            <img src="./assets/img-skill-icon-1.png" alt="" />
+            <h3>Web Layout</h3>
+            <ul>
+              <li>RWD + Sass</li>
+              <li>Boostrap 3</li>
+              <li>FB pixel、schema.org</li>
+              <li>大型電子商務版型規劃經驗 (2 years）</li>
+            </ul>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="200">
+            <img src="./assets/img-skill-icon-2.png" alt="" />
+            <h3>JavaScript & Node.js</h3>
+            <ul>
+              <li>jQuery animation</li>
+              <li>AJAX/JSON</li>
+              <li>Vue.js (1 years)</li>
+              <li>Node.js / express</li>
+            </ul>
+          </div>
+          <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <img src="./assets/img-skill-icon-3.png" alt="" />
+            <h3>Dev Helper</h3>
+            <ul>
+              <li>Git / Github</li>
+              <li>Heroku / AWS EC2、S3</li>
+              <li>gulp / webpack</li>
+              <li>介接歐付寶、玉山銀行金流經驗</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- experince section -->
+      <section class="experiences">
+        <h2>Experience</h2>
+        <div class="exprience-container">
+          <div class="cards-container first-block">
+            <div class="card"></div>
+
+            <div class="card" data-aos="fade-right">
+              <h3>2015/03 - 2015/06</h3>
+              <h4>Web Developer軟體工程師</h4>
+              <h5>甜點資訊開發股份有限公司</h5>
+              <p>
+                Implemented a system for creating campaign landing pages from
+                the CMS.
+              </p>
+            </div>
+            <div class="card"></div>
+          </div>
+          <div class="progress-bar">
+            <img src="./assets/dot-start.png" alt="" />
+            <div class="bar"></div>
+            <img src="./assets/dot-timeItem.png" alt="" />
+            <div class="bar long-bar"></div>
+            <img src="./assets/dot-timeItem.png" alt="" />
+            <div class="bar long-bar"></div>
+            <img src="./assets/dot-timeItem.png" alt="" />
+            <div class="bar longest-bar"></div>
+            <div class="bar base-bar"></div>
+          </div>
+          <div class="cards-container second-block" data-aos="fade-left">
+            <div class="card">
+              <h3>2016/01 - Present</h3>
+              <h4>Web Developer 資深工程師</h4>
+              <h5>六角超有創意有限公司</h5>
+              <p>
+                Implemented a system for creating campaign landing pages from
+                the CMS.
+              </p>
+            </div>
+            <div class="card"></div>
+            <div class="card" data-aos="fade-left">
+              <h3>2010/01 - 2015/3</h3>
+              <h4>Web Developer 網頁工程師</h4>
+              <h5>前端無極限有限公司</h5>
+              <p>
+                Implemented a system for creating campaign landing pages from
+                the CMS.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- works -->
+      <section class="works">
+        <h2>Works 作品</h2>
+        <div class="cards-container">
+          <div class="card work1" data-aos="flip-left" data-aos-delay="200">
+            <div class="img-container">
+              <img src="./assets/logo-work-1.png" alt="" />
+            </div>
+            <div class="title">
+              <h3>Works 1 title</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="card work2" data-aos="flip-left">
+            <div class="img-container">
+              <img src="./assets/logo-work-2.png" alt="" />
+            </div>
+            <div class="title">
+              <h3>Works 2 title</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+          <div class="card work3" data-aos="flip-left" data-aos-delay="400">
+            <div class="img-container">
+              <img src="./assets/logo-work-3.png" alt="" />
+            </div>
+            <div class="title">
+              <h3>Works 3 title</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- profile -->
+      <section class="profile">
+        <h2>About 梅介其</h2>
+        <div class="container">
+          <img src="./assets/img-c-portrait-1804963_1920.png" alt="" />
+          <div class="text">
+            <p>
+              具有八年的網頁開發以及介面設計經驗，在 Github
+              上參與數個開源專案，熟悉原生 JavaScript EM6 開發，以及 VueJS,
+              reactJS 等前端框架。
+              盡為受。幾業本造意當子二，方火動李方然他。住小科登務如卻。後洋一如線達告子喜港友變目不族風西排書終小學：年辦行中夫輪中詩的國、組上會隨可冷灣的進和有是不信使成因給？
+            </p>
+            <p>
+              作而上不選現該時業、公準間在持我天本見連國問轉技雜和據果股會們病觀利學……子照自充則生好國夠用原行增發狀難樓新起為對時我生比：使色最交傳，的設學，作夠門友調管更張奇了覺有結畫會單公！
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <footer></footer>
+    <footer>
+      <p>© 2017 梅介其. ALL RIGHTS RESERVED</p>
+    </footer>
+    <script src="index.js"></script>
   </body>
 </html>
